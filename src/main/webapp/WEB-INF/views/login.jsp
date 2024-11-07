@@ -12,20 +12,20 @@
   <h1>Login</h1>
   <div class="card">
     <div class="card-body">
-      <form action="<%=request.getContextPath()%>/register" method="post">
+      <form action="<%=request.getContextPath()%>/validate_login" method="post">
 
         <div class="form-group row">
-          <label for="email" class="col-sm-2 col-form-label">Email</label>
+          <label class="col-sm-2 col-form-label">Email</label>
           <div class="col-sm-7">
-            <input type="text" class="form-control" name="firstName"
+            <input type="text" class="form-control" name="email"
                    placeholder="Digite seu Email">
           </div>
         </div>
 
         <div class="form-group row">
-          <label for="password" class="col-sm-2 col-form-label">Senha</label>
+          <label class="col-sm-2 col-form-label">Senha</label>
           <div class="col-sm-7">
-            <input type="text" class="form-control" name="lastName"
+            <input type="text" class="form-control" name="password"
                    placeholder="Digite sua senha">
           </div>
         </div>

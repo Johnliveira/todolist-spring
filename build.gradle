@@ -25,18 +25,29 @@ repositories {
 }
 
 dependencies {
+
+	// spring boot
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'com.mysql:mysql-connector-j'
-	annotationProcessor 'org.projectlombok:lombok'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+
+	// generic
+	implementation 'org.mindrot:jbcrypt:0.4'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+
+	// test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
-	implementation 'org.mindrot:jbcrypt:0.4'
+	// lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+
+	// mapstruct
+	implementation 'org.mapstruct:mapstruct:1.6.2'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.2'
 
 }
 

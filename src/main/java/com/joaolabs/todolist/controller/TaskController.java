@@ -12,7 +12,6 @@ public class TaskController {
     public TaskDTO getTask() {
         TaskDTO taskDTO = new TaskDTO();
         taskDTO.setId(1L);
-        taskDTO.setTitle("Test");
         taskDTO.setDescription("Test description");
 
         return taskDTO;
