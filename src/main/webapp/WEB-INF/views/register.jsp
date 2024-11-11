@@ -19,7 +19,7 @@
     <h1>Registre-se</h1>
     <div class="card">
         <div class="card-body">
-            <form action="<%=request.getContextPath()%>/create_user" method="post">
+            <form action="<%=request.getContextPath()%>/createUser" method="post">
 
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Email</label>
